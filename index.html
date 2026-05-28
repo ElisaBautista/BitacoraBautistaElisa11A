@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisa Bautista</title>
+    <link rel="icon" type="image/png" href="Recursos/IMG/LogoAzul.png">
+
+    <style>html, body{
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        padding: 20px;
+        background-color: hotpink;
+    }
+    h1{
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #bf00ff,
+            0 0 40px #bf00ff,
+            0 0 80px #bf00ff,
+            0 0 120px #bf00ff;
+    }
+
+    main{
+        flex: 1;
+        padding: 20px;
+        max-width: 100%;
+        width:95%;
+        margin: 0 auto;
+    }
+    footer{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        border-top: 1px solid rgb(206, 0, 175);
+        background-color:hotpink;
+    }
+    .semana{
+        background-color: rgb(255, 242, 253);
+        color: #333;
+        border-radius: 15px;
+        padding: 40px;
+        margin: 30px auto;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        box-shadow: 0 4px 15px rgba(255, 163, 249, 0.2);
+        border-left: 5px solid #ff00bb;
+        text-align: left;
+        transition: transform 0.3s ease;
+    }
+    .semana:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(255, 163, 249, 0.2);
+    }
+    .semana h2{
+        margin-top: 0;
+        color: #ff00bb;
+        font-size: 1.5rem;
+    }
+    .semana p{
+        line-height: 1.6;
+        color: #555555
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Bitácora Segunda y Tercera unidad</h1> 
+    </header>
+    <main>
+        <div class="semana">
+            <h2>Semana 1: Introducción</h2>
+            <p>Documento completo:</p>
+            <iframe src="Recursos/ArduinoB00436-1.pdf" width="100%" height="500px" style="border: none; border-radius: 8px;">
+            </iframe>
+        </div>
+        <div class="semana">
+            <h2>Semana 2: Primer Circuito</h2>
+            <p>Lista de materiales para el primer Circuito:</p>
+            <ul style="color: #555; line-height: 1.8;">
+                <li>Protoboard</li>
+                <li>Led (no de color rojo)</li>
+                <li>Led RGB</li>
+                <li>2 resistencias</li>
+                <li>Arduino Uno R3</li>
+            </ul>
+            
+            <p style="font-weight: bold; color: #ff00bb;">Esquema del circuito:</p>
+            <div style="text-align: left;">
+                <img src="Recursos/IMG/Circuito.png" alt="Circuito" style="width: 100%; max-width: 500px; height: auto; border-radius: 10px; border: 2px solid #ff00bb; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+        <div class="semana">
+            <h2>Semana 3: Led RGB</h2>
+            <p>Se completó el circuito y se programó para que la LED RGB se encendiera en los 3 colores (rojo, azul y verde).</p>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; margin-top: 20px;">
+                
+                <div style="flex: 1; min-width: 300px;">
+                    <video width="100%" style="border-radius: 10px; border: 2px solid #ff00bb;" controls>
+                        <source src="Recursos/Grabaciones/GRABACION3.mp4" type="video/mp4">
+                    </video>
+                </div>
+    </main>
+    <footer>
+        <span>@elisagabrielabautista</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" 
+        height="50" 
+        width="200"
+        style="transition: all .3s ease;"
+        onmouseover="this.style.transform='scale(1.2)'"
+        onmouseout="this.style.transform='scale(1)'">
+    </footer>
+</body>
+</html>
